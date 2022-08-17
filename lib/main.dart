@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.greenAccent.shade100,
+        backgroundColor: Colors.grey.shade300,
         body: SafeArea(
           child: Column(
             children: [
@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Image(
-                    height: 50,
-                    width: 50,
+                    height: 70,
+                    width: 70,
                     image: AssetImage('images/logo.png'),
                   ),
                   const SizedBox(
@@ -36,33 +36,34 @@ class MyApp extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        'Maintenance',
+                        'Purple Door learning and support center',
                         style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 12,
                             fontFamily: 'Rubik Medium',
-                            color: Colors.lightBlue),
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black),
                       ),
                       Text(
-                        'Box ',
+                        'firts login UI  ',
                         style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 20,
                             fontFamily: 'Rubik Medium',
-                            color: Colors.orange),
+                            color: Colors.black),
                       ),
                     ],
                   )
                 ],
               ),
               const SizedBox(
-                height: 40,
+                height: 50,
               ),
               const Center(
                 child: Text(
                   'Login',
                   style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 60,
                       fontFamily: 'Rubik Medium',
-                      color: Colors.lightBlue),
+                      color: Colors.black),
                 ),
               ),
               const SizedBox(
@@ -70,12 +71,12 @@ class MyApp extends StatelessWidget {
               ),
               const Center(
                 child: Text(
-                  'our first login page in flutter\n by asif taj',
+                  'our first login page in flutter\n by Haroon Rafique',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: 16,
                       fontFamily: 'Rubik Regular',
-                      color: Colors.lightBlue),
+                      color: Colors.deepOrange),
                 ),
               ),
               const SizedBox(
@@ -86,18 +87,18 @@ class MyApp extends StatelessWidget {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Email',
-                    fillColor: Colors.yellow,
+                    fillColor: Colors.white,
                     filled: true,
                     prefixIcon: const Icon(
                       Icons.alternate_email,
                       color: Colors.lightBlue,
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.yellow),
+                      borderSide: const BorderSide(color: Colors.black),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.yellow),
+                      borderSide: const BorderSide(color: Colors.black),
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
@@ -108,7 +109,7 @@ class MyApp extends StatelessWidget {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Password',
-                    fillColor: Colors.yellow,
+                    fillColor: Colors.white,
                     filled: true,
                     prefixIcon: const Icon(
                       Icons.lock_open,
@@ -126,6 +127,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+             SizedBox(height: 1.5, ),
              Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -134,16 +136,16 @@ class MyApp extends StatelessWidget {
                     child: Text(
                       'Forgot Password',
                       style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 20,
                           decoration: TextDecoration.underline,
                           fontFamily: 'Rubik Regular',
-                          color: Colors.lightBlue),
+                          color: Colors.black),
                     ),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 20,
+                height: 15,
               ),
               Container(
                 height: 50,
@@ -163,7 +165,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
